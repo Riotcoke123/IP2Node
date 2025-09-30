@@ -9,7 +9,7 @@
     </p>
     <h2>🚀 Overview</h2>
     <p>
-        <strong>ip2Node</strong> is a Node.js application that automatically fetches posts from Communities.win APIs, identifies new media content, uploads supported files to FileDitch, and maintains a local JSON database. It runs continuously as a background processor and also provides an Express-based web interface for monitoring and manual triggers.
+        <strong>IP2Node</strong> is a Node.js application that automatically fetches posts from Communities.win APIs, identifies new media content, uploads supported files to FileDitch, and maintains a local JSON database. It runs continuously as a background processor and also provides an Express-based web interface for monitoring and manual triggers.
     </p>
     <h2>✨ Features</h2>
     <ul>
