@@ -27,7 +27,7 @@
         <li>Configurable via environment variables for API keys, URLs, and server settings.</li>
     </ul>
     <h2>⚡ Installation</h2>
-    <pre><code>git clone https://github.com/Riotcoke123/ip2Node.git
+    <pre><code>git clone https://github.com/Riotcoke123/IP2Node.git
 cd ip2Node
 npm install
 </code></pre>
