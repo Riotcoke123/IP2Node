@@ -4,7 +4,7 @@
 <body>
     <h1>IP2Node <span class="badge">v1.0</span></h1>
     <p>
-        <strong>GitHub:</strong> <a href="https://github.com/Riotcoke123/ip2Node" target="_blank">Riotcoke123/ip2Node</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/Riotcoke123/IP2Node" target="_blank">Riotcoke123/ip2Node</a><br>
         <strong>License:</strong> <span class="badge">GNU GPL 3.0</span>
     </p>
     <h2>🚀 Overview</h2>
