@@ -4,7 +4,7 @@
 <body>
     <h1>IP2Node <span class="badge">v1.0</span></h1>
     <p>
-        <strong>GitHub:</strong> <a href="https://github.com/Riotcoke123/IP2Node" target="_blank">Riotcoke123/ip2Node</a><br>
+        <strong>GitHub:</strong> <a href="https://github.com/Riotcoke123/IP2Node" target="_blank">Riotcoke123/IP2Node</a><br>
         <strong>License:</strong> <span class="badge">GNU GPL 3.0</span>
     </p>
     <h2>🚀 Overview</h2>
@@ -76,6 +76,6 @@ UPLOAD_TIMEOUT=300
         This project is licensed under the <strong>GNU General Public License v3.0</strong>. See <a href="https://www.gnu.org/licenses/gpl-3.0.en.html" target="_blank">GPL-3.0 License</a> for details.
     </blockquote>
     <h2>💻 Support & Contributions</h2>
-    <p>Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or submit a pull request on the <a href="https://github.com/Riotcoke123/ip2Node" target="_blank">GitHub repository</a>.</p>
+    <p>Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or submit a pull request on the <a href="https://github.com/Riotcoke123/IP2Node" target="_blank">GitHub repository</a>.</p>
 </body>
 </html>
