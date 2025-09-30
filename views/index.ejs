@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IP2Always Media Backup & Archiver</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <img src="/ip2.png" alt="Community MP4 Backup Header" class="header-image">
+
+  <div class="actions">
+    <div id="manualStatus" class="status" style="margin-left: 10px;"></div>
+  </div>
+
+  <% if (items && items.length > 0) { %>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>FileDitch Link</th>
+          <th>Original Link</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% items.forEach(function(item) { %>
+          <tr>
+            <td class="title-column"><%= item.title || 'N/A' %></td>
+            <td class="author-column">
+              <% if (item.author) { %>
+                <a href="https://communities.win/u/<%= item.author %>" target="_blank" rel="noopener noreferrer">
+                  <%= item.author %>
+                </a>
+              <% } else { %>
+                N/A
+              <% } %>
+            </td>
+            <td>
+              <% if (item.fileditch_link) { %>
+                <a href="<%= item.fileditch_link %>" target="_blank" rel="noopener noreferrer" title="<%= item.original_link %>">
+                  FileDitch
+                </a>
+              <% } else { %>
+                N/A
+              <% } %>
+            </td>
+            <td>
+              <% if (item.original_link) { %>
+                <a href="<%= item.original_link %>" target="_blank" rel="noopener noreferrer" title="<%= item.original_link %>">
+                  Original
+                </a>
+              <% } else { %>
+                N/A
+              <% } %>
+            </td>
+          </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <p style="text-align: center; margin-top: 15px;">Total items: <%= item_count %></p>
+  <% } else { %>
+    <p class="no-data">No data found yet. Automatic check runs periodically.</p>
+  <% } %>
+
+  <script>
+    const manualStatus = document.getElementById('manualStatus');
+
+    async function fetchAndUpdate() {
+      manualStatus.textContent = 'Processing...';
+      manualStatus.style.color = 'orange';
+
+      try {
+        const response = await fetch('/process', { method: 'POST' });
+        if (!response.ok) {
+          const errData = await response.json().catch(() => ({}));
+          throw new Error(`HTTP error! Status: ${response.status} - ${errData.message || 'Unknown server error'}`);
+        }
+
+        const data = await response.json();
+        console.log('Automatic Process response:', data);
+        manualStatus.textContent = `Processing complete. Added ${data.new_items_added} item(s). Reloading...`;
+        manualStatus.style.color = 'green';
+
+        // Reload page to show new items
+        setTimeout(() => window.location.reload(), 2000);
+      } catch (error) {
+        console.error('Error during automatic process:', error);
+        manualStatus.textContent = `Error: ${error.message}`;
+        manualStatus.style.color = 'red';
+      }
+    }
+
+    // Run automatically every 3 minutes (180000 ms)
+    fetchAndUpdate(); // initial fetch on page load
+    setInterval(fetchAndUpdate, 180000);
+  </script>
+</body>
+</html>
