@@ -77,5 +77,13 @@ UPLOAD_TIMEOUT=300
     </blockquote>
     <h2>💻 Support & Contributions</h2>
     <p>Contributions, bug reports, and suggestions are welcome! Feel free to open an issue or submit a pull request on the <a href="https://github.com/Riotcoke123/IP2Node" target="_blank">GitHub repository</a>.</p>
+    <h2>🌐 Additional Integrations</h2>
+    <p>
+        You can also explore <strong>Scored.co</strong> for sports and event data:
+        <ul>
+            <li>Website: <a href="https://scored.co/" target="_blank">https://scored.co/</a></li>
+            <li>API Documentation (Follow TOS): <a href="https://docs.scored.co/" target="_blank">https://docs.scored.co/</a></li>
+        </ul>
+    </p>
 </body>
 </html>
