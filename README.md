@@ -1,68 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>ip2Node - README</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f6f8;
-            color: #2c3e50;
-            margin: 2rem auto;
-            max-width: 900px;
-            line-height: 1.7;
-        }
-        h1, h2, h3 {
-            color: #34495e;
-            margin-bottom: 0.5rem;
-        }
-        h1 {
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.3rem;
-        }
-        a {
-            color: #3498db;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        pre {
-            background-color: #ecf0f1;
-            padding: 1rem;
-            overflow-x: auto;
-            border-radius: 6px;
-            border-left: 5px solid #3498db;
-        }
-        code {
-            background-color: #ecf0f1;
-            padding: 2px 5px;
-            border-radius: 3px;
-            font-family: Consolas, monospace;
-        }
-        ul {
-            margin-top: 0.3rem;
-        }
-        .badge {
-            display: inline-block;
-            background-color: #3498db;
-            color: white;
-            padding: 3px 8px;
-            font-size: 0.8rem;
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-        blockquote {
-            border-left: 4px solid #3498db;
-            padding-left: 1rem;
-            color: #555;
-            background: #f0f4f8;
-            border-radius: 5px;
-        }
-    </style>
-</head>
+
 <body>
-    <h1>ip2Node <span class="badge">v1.0</span></h1>
+    <h1>IP2Node <span class="badge">v1.0</span></h1>
     <p>
         <strong>GitHub:</strong> <a href="https://github.com/Riotcoke123/ip2Node" target="_blank">Riotcoke123/ip2Node</a><br>
         <strong>License:</strong> <span class="badge">GNU GPL 3.0</span>
